@@ -551,6 +551,61 @@ margin-left: auto;
   background-color: var(--hover-footer-icons);
 }
 
+ /* Subscribe */
+ .subscribe {
+  margin-left: 80px;
+  color: var(--wht-cl);
+  }
+   .subscribe-form 
+ {
+  width: 100%;
+  display: flex;
+  }
+  
+ .form-label 
+
+ .form-input {
+  display: flex;
+  margin-left: 0;
+  
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ }
+ 
+ .subscribe-btn {
+  position: relative;
+ }
+
+ .subscribe-form-btn.btn{
+  color: var(--wht-cl);
+ }
+
+ .subscribe-form-btn{
+   margin-left: 24px;
+   align-items: center;
+   justify-content: center;
+
+   width: 165px;
+   height: 40px;
+   padding: 8px 64px 8px 24px;
+
+   border-radius: var(--border-radius);
+   background-color: var(--contrast-bg-cl);
+
+ }
+
+ .subscribe-icon {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+ }
+
+
  /* Portfolio */
 
 .filtr-list {
@@ -639,6 +694,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   transition: var(--trns-fast);
  }
 
+
 /* Modal window */
 
 .backdrop {
@@ -719,3 +775,69 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     .modal-btn:focus .modal-icon {
     fill: var(--wht-cl);
   }
+
+  .modal-text{
+    margin: 72px 24px 8px 24px;
+  }
+.contact-form-list {
+  margin: 16px 24px 16px 24px;
+
+}
+  .comment-form {
+    width:360px ;
+    height:120px;
+    padding-top: 8px;
+    padding-left: 16px;
+    resize: none;
+    margin-left: 24px;
+}
+
+  .contact-form-input 
+  {display: flex;
+   margin-bottom: 8px;
+   margin-top: 4px;
+   }
+
+.modal-checkbox {
+  display: flex;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+  .accept-form-checkbox {
+    display: flex;
+      justify-content: center;
+      gap: 8px;
+  }
+
+  .modal-submit-btn {
+      margin-left: 24px;
+      align-items: center;
+      justify-content: center;
+  
+      width: 165px;
+      height: 40px;
+      padding: 8px 64px 8px 24px;
+  
+      border-radius: var(--border-radius);
+      background-color: var(--contrast-bg-cl);
+      }
+      .modal-submit-btn.btn{
+        color: var(--wht-cl);
+      }
+
+      label {
+        font-size: 12px;
+        line-height: calc(16/12);
+        letter-spacing: 0.04em;
+        color: 8E8F99;
+        
+      }
+      
+      placeholder {
+       font-size: 12px;
+       line-height: calc(16/12);
+       letter-spacing: 0.04em;
+       color: rgba(117, 117, 117, 0.5);
+
+      }

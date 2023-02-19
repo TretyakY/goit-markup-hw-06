@@ -549,6 +549,30 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <p class="footer-right-text">Subscribe</p>
+
+          <form class="subscribe-form">
+            <label class="form-label" for="user-email"></label>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+            />
+
+            <div class="subscribe-btn">
+              <button type="submit" class="subscribe-form-btn btn">
+                Subscribe
+              </button>
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -560,9 +584,70 @@
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="contact-form">
+          <ul class="contact-form-list list">
+            <li>
+              <label for="user-name">Name</label>
+              <input
+                type="text"
+                class="contact-form-input"
+                name="user-name"
+                id=""
+                minlength="2"
+                pattern=""
+                required
+              />
+            </li>
+
+            <li>
+              <label for="user-email">Phone</label>
+              <input
+                type="email"
+                class="contact-form-input"
+                name="user-email"
+                required
+              />
+            </li>
+
+            <li>
+              <label for="user-phone">Email</label>
+              <input
+                type="tel"
+                class="contact-form-input"
+                name="user-phone"
+                required
+              />
+            </li>
+            <li>
+              <label for="Comment">Comment</label>
+              <textarea
+                name="Comment"
+                class="contact-form-input"
+                id="Comment"
+                cols="30"
+                rows="10"
+                placeholder="Text input"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              class="accept-form-checkbox"
+              name="agree"
+              value="I accept"
+              id="accept-checkbox"
+            />
+            <label for="accept-checkbox">
+              I accept the terms and conditions of the Privacy Policy
+            </label>
+          </div>
+          <button type="submit" class="modal-submit-btn btn">Send</button>
+        </form>
       </div>
     </div>
-
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
   </body>
