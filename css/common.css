@@ -60,6 +60,20 @@ img {
 .link {
   text-decoration: none;
 }
+
+.visually-hidden 
+{
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
 /* reset none*/
 html {
   scroll-behavior: smooth;
@@ -556,28 +570,33 @@ margin-left: auto;
   margin-left: 80px;
   color: var(--wht-cl);
   }
+  
    .subscribe-form 
- {
+ {display: block;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   }
   
- .form-label 
-
- .form-input {
-  display: flex;
+  .form-input {
+  box-sizing: border-box;
   margin-left: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  
-  padding-left: 16px;
+   
+  padding: 8px 16px;
   width: 264px;
   height: 40px;
   border-radius: var(--border-radius);
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   
+  color: var(--wht-cl);
+  transition: outline-color var(--trns-fast);
  }
+  
 
+.form-input:focus:not(:focus-visible) {
+  outline: none;
+}
 
  .subscribe-btn {
   position: relative;
@@ -780,14 +799,19 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 /* Modal form */
 
 input {
-  
-  font-family: inherit;
- 
+    
+  background-color: transparent;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(24/16);
+  letter-spacing: 0.02em;
+    
 }
 
 .modal-text {
   display: block;
-   margin-bottom: 16px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -859,7 +883,6 @@ line-height: calc(16/12);
 letter-spacing: 0.04em;
 color: rgba(117, 117, 117, 0.5);
 }
-
           
 
 .modal-form-agreement {
@@ -874,15 +897,60 @@ color: rgba(117, 117, 117, 0.5);
 .modal-form-checkbox {
   appearance: none;
   display: block;
-  width: 22px;
-  height: 24px;
-  
-  border-radius: 2px;
-  border: solid 1px black;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2E2F42;
+  border-radius: 3px;
+  fill: none;
 
-  
+  transition: background-color var(--trns-fast), border-color var(--trns-fast) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px;
   
 }
+.modal-form-checkbox:checked {
+  background-color: var(--deep-bg-cl);
+  border-color: var(--deep-bg-cl);
+  background-size: 16px;
+} 
+
+.modal-form-checkbox:checked + .custom-checkbox >.custom-checkbox-frame {
+background-color: var(--deep-bg-cl);
+stroke: var(--deep-bg-cl);
+} 
+.custom-checkbox {}
+
+.custom-checkbox-frame {
+  fill: transparent;
+  display: block;
+  stroke: #2E2F42;
+  transition: 400ms;
+  background-color: var(--deep-bg-cl);
+  border-color: var(--deep-bg-cl);
+
+}
+.custom-checkbox-check {
+  fill: white;
+  display: block;
+  opacity: 0;
+  transform: rotate(0) scale(0.3);
+  transition: 400ms 200ms;
+  transform-origin: center;
+  background-color: var(--deep-bg-cl);
+  border-color: var(--deep-bg-cl);
+
+}
+.modal-form-checkbox:checked +.custom-checkbox > .custom-checkbox-check {
+opacity: 1;
+display: block;
+transform: scale(1);
+transition: 400ms;
+background-color: var(--deep-bg-cl);
+border-color: var(--deep-bg-cl);
+
+}
+
 
 .modal-form-desc {
   font-size: 14px;
@@ -905,6 +973,8 @@ display: block;
     align-items: center;
     justify-content: center;
   
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 169px;
     height: 56px;
     padding: 16px 32px;
@@ -917,46 +987,3 @@ display: block;
 .modal-form-btn.btn {
   color: var(--wht-cl);
 }
-
-/* .modal-form-btn:disabled {
-  filter: grayscale(1);
-} */
-
-
-
-
-/* Modal form */
-  /* .modal-text{
-
-}
-
-  .modal-submit-btn {
-      margin-left: 119px;
-      align-items: center;
-      justify-content: center;
-  
-      width: 169px;
-      height: 56px;
-      padding: 16px 32px;
-  
-      border-radius: var(--border-radius);
-      background-color: var(--contrast-bg-cl);
-      }
-   
-      }
-
-      label {
-        font-size: 12px;
-        line-height: calc(16/12);
-        letter-spacing: 0.04em;
-        color: 8E8F99;
-        
-      }
-      
-      placeholder {
-       font-size: 12px;
-       line-height: calc(16/12);
-       letter-spacing: 0.04em;
-       color: rgba(117, 117, 117, 0.5);
-
-      } */
