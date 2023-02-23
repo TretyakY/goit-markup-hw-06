@@ -82,9 +82,9 @@
     </symbol>
     <symbol id="icon-box"
      viewBox="0 0 32 32"
-     fill="none"
+     
      >
-<path stroke="black" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.5" d="M4 1.25h24c1.519 0 2.75 1.231 2.75 2.75v24c0 1.519-1.231 2.75-2.75 2.75h-24c-1.519 0-2.75-1.231-2.75-2.75v-24c0-1.519 1.231-2.75 2.75-2.75z"></path>
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.5" d="M4 1.25h24c1.519 0 2.75 1.231 2.75 2.75v24c0 1.519-1.231 2.75-2.75 2.75h-24c-1.519 0-2.75-1.231-2.75-2.75v-24c0-1.519 1.231-2.75 2.75-2.75z"></path>
 </symbol>
 
 
